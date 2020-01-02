@@ -1,0 +1,880 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+}
+@keyframes logo {
+    0% {color: rgb(237, 20, 91); text-shadow: 0 0 18px rgb(237, 20, 91)}
+    25% {color: rgba(237, 20, 91, 0.5); text-shadow: 0 0 18px rgba(237, 20, 91, 0.5)}
+    50% {color: rgba(255, 255, 255, 0.5); text-shadow: 0 0 18px rgba(255, 255, 255, 0.5)}
+    75% {color: rgb(255, 255, 255); text-shadow: 0 0 18px rgb(255, 255, 255)}
+    100% {color: rgba(237, 20, 91, 0.5); text-shadow: 0 0 18px rgba(237, 20, 91, 0.5)}
+}
+
+a, a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+.flex {
+    display: flex;
+}
+.alg-center {
+    align-items: center;
+}
+.jst-btw {
+    justify-content: space-between;
+}
+nav {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+menu {
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+#hero .container .hero-content .title {
+    position: relative;
+}
+#hero .container .hero-content .title:before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    bottom: -4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 0.2rem;
+    background-color: #ed145b;
+}
+header .container nav .mobile-btn {
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    right: 5rem;
+    display: none;
+
+}
+header .container nav .mobile-btn span {
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: 0.3rem;
+    background: #ed145b;
+}
+.mobile-btn span:before, .mobile-btn span:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #ed145b;
+    transition: 0.4s;
+}
+.mobile-btn span:before {
+    transform: translateY(-10px);
+}
+.mobile-btn span:after {
+    transform: translateY(10px);
+}
+.show span {
+    background: transparent;
+}
+.show span:before {
+    transform: translateY(0) rotate(-45deg);
+}
+.show span:after {
+    transform: translateY(0) rotate(45deg);
+}
+/*############### HERO ###############*/
+#hero {
+    position: relative;
+    overflow: hidden;
+    background: url(../images/girl-bg.png) fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+#hero .container .hero-content {
+    text-align: center;
+    padding-top: 20rem;
+}
+.container nav .logo {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.container nav .logo span {
+    animation: logo 8s alternate infinite linear;
+}
+.container nav .menu li a:hover {
+    content: "";
+    color: #ed145b;
+}
+.container nav .menu .menu-list-item a {
+    color: #fff;
+    transition: 0.4s;
+}
+.container nav .menu .menu-list-item {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-left: 2.7rem;
+    text-transform: uppercase;
+}
+#hero .container .hero-content .top-title {
+    color: #ffffff;
+    font-size: 4.6rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+#hero .container .hero-content .top-title span {
+    font-weight: 700;
+}
+#hero .container .hero-content .top-description {
+    font-size: 2rem;
+    margin-top: 10rem;
+    line-height: 3rem;
+    color: #b6b6b6;
+}
+#hero .container .hero-content .btn {
+    position: relative;
+    padding: 2rem 5.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    top: 7.5rem;
+    background: #ed145b;
+    border-radius: 4rem;
+    transition: 0.4s;
+}
+#hero .container .hero-content .btn:hover {
+    background-color: #ffffff;
+    text-shadow: 0 0 50px #ed145b;
+    color: #ed145b;
+    box-shadow: 0 0 50px #222222;
+}
+#hero .Line {
+    position: absolute;
+    bottom: -3.5rem;
+    transform: rotate(2deg);
+}
+/*############### HERO ###############*/
+
+                              /*************BLOC_2***************/
+#powerfull {
+    width: 100%;
+    background: #f4f4f4;
+}
+#powerfull .container .row {
+    padding-top: 2rem;
+    background: #f4f4f4;
+}
+
+#powerfull .container .row .col-6 {
+    width: 50%;
+    padding-top: 10rem;
+    position: relative;
+    margin: 0 auto;
+}
+#powerfull .container .row .col-6 h3 {
+    font-family: 'Lato', sans-serif;
+    width: 40rem;
+    font-size: 3.8rem;
+    color: #5a5a5a;
+    font-weight: 300;
+    position: relative;
+}
+
+#powerfull .container .row .col-6 h3:before {
+    content: '';
+    position: absolute;
+    bottom: -4rem;
+    width: 48%;
+    height: 0.2rem;
+    background-color: #ed145b;
+}
+#powerfull .container .row .col-6 p{
+    font-family: 'Lato', sans-serif;
+    padding-top: 8.5rem;
+    font-size: 1.5rem;
+    width: 46rem;
+    color: #808080;
+    line-height: 3rem;
+
+}
+#powerfull .container .row .col-6 .link a{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem ;
+    font-weight: 700;
+    color: #ed145b;
+    text-transform: uppercase;
+    padding: 7rem 0;
+
+}
+#powerfull .container .row .col-6 .photo {
+    position: absolute;
+    right: -25%;
+    left:-10%;
+    top: 10rem;
+}
+/*************BLOC_3***************/
+#ourservices{
+    width: 100%;
+    padding: 15rem 0;
+}
+
+#ourservices .container h3{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 300;
+    color: #5a5a5a;
+    position: relative;
+
+}
+#ourservices .container p{
+    font-family: 'Lato', sans-serif;
+    margin: 7.5rem auto 0;
+    font-size: 1.5rem;
+    width: 70rem  ;
+    color: #5a5a5a;
+    text-align: center;
+
+}
+#ourservices .container  h3:before{
+    content: '';
+    width: 15%;
+    margin: auto;
+    height: 0.2rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    right: 0;
+    background: #ed145b;
+}
+#ourservices .container .row .col-3{
+    width: 25%;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 13rem;
+}
+
+.flex{
+    display: flex;
+}
+.fl-wrap{
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and ( max-width: 996px) {
+    #powerfull .container .row .col-6{
+        width: 100%;
+    }
+    #powerfull .container .row .col-6 .photo{
+        display: none;
+    }
+    #ourservices .container .row .col-3{
+        width: 100%;
+    }
+    #ourservices .container p{
+        width: 100%;
+    }
+    #powerfull .container .row .col-6 p{
+        width: 100%;
+    }
+
+}
+
+/**********************PRICES*********************/
+#prices {
+    background: #f4f4f4;
+    padding: 8rem;
+}
+
+#prices .container .title-price{
+    text-align: center;
+}
+
+#prices .container .title-price .prices-title {
+    position: relative;
+    font-size: 3.8rem;
+    font-style: italic;
+    color: #5a5a5a;
+}
+
+#prices .container .title-price .prices-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -4rem;
+    width: 15%;
+    height: 0.2rem;
+    background-color: #ed145b;
+}
+
+#prices .container .title-price p {
+    width: 50%;
+    margin: 8rem auto 0;
+    font-size: 1.5rem;
+    color: #808080;
+    line-height: 2;
+}
+
+#prices .container .row {
+    margin-top: 7rem;
+}
+
+#prices .container .row .col-3 {
+    width: 25%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#prices .container .row .col-3 .first-section {
+    background-color: #5a5a5a;
+    color: #f4f4f4;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    min-height: 13rem;
+    text-align: center;
+    transition: 0.6s;
+}
+#prices .container .row .col-3:hover .first-section {
+    background-color: #ed145b;
+    transition: 0.3s;
+}
+
+#prices .container .row .col-3 .first-section h3 {
+    width: 100%;
+    height: 30%;
+    line-height: 2rem;
+    padding: 4rem 0 0;
+}
+
+#prices .container .row .col-3 .first-section span {
+    font-size: 5rem;
+}
+
+#prices .container .row .col-3 .first-section .second-span {
+    font-size: 1.5rem;
+}
+
+#prices .container .row .col-3 .second-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    line-height: 3;
+    font-size: 1.5rem;
+    padding: 3rem 0;
+    position: relative;
+}
+
+#prices .container .row .col-3 .second-section ul li {
+    list-style: none;
+}
+
+#prices .container .row .col-3 .second-section ul {
+    width: 100%;
+    height: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #646464;
+}
+
+#prices .container .row .col-3 .second-section .btn-buy {
+    border-radius: 3rem;
+    background-color: #ed145b;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 3rem;
+}
+
+#prices .container .row .col-3 .second-section .type-name {
+    position: absolute;
+    border-radius: 3rem;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    color: #5a5a5a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 3rem;
+    text-transform: uppercase;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/**********************PRICES*********************/
+
+/*******************PRICES-INFO*********************/
+#prices-info {
+    padding: 7rem 7rem;
+}
+
+#prices-info .container .row {
+    text-align: left;
+    background-color: #ffffff;
+}
+
+#prices-info .container .row .col-2 {
+    width: 33.3333%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+#prices-info .container .row .col-2 .info-img {
+    padding-right: 1rem;
+}
+
+#prices-info .container .row .col-2 .info-description .description-title {
+    color: #ed145b;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+#prices-info .container .row .col-2 .info-description .title-description {
+    color: #838383;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+#prices-info .container .row .col-2 .info-description {
+    padding: 0 2rem;
+}
+
+/*******************PRICES-INFO*********************/
+
+@media screen and (max-width: 996px) {
+    html {
+        font-size:  9px;
+    }
+    #prices .container .row .col-3 {
+        width: 50%;
+    }
+    #prices .container .row .col-3 .second-section .btn-buy {
+        padding: 1rem 2rem;
+    }
+    #prices-info .container .row .col-2 {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 776px) {
+    html {
+        font-size: 8px;
+    }
+    #prices .container .row .col-3 {
+        width: 100%;
+    }
+    #prices .container .row .col-3 .second-section .btn-buy {
+        padding: 1rem 2rem;
+    }
+    #prices-info .container .row .col-2 {
+        width: 100%;
+    }
+}
+/*############# MACHE ############*/
+#Mache{
+    background-image: url("../images/girl.png");
+    background-attachment: fixed;
+    width: 100%;
+    padding: 10rem 0;
+}
+#Mache .container{
+    width: 80%;
+    margin: auto;
+}
+#Mache .container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#Mache .container .title{
+    position: relative;
+    font-family: Lato,sans-serif;
+    font-size: 3.8rem;
+    margin-bottom: 7.6rem;
+    color: #8c8c8c;
+}
+#Mache .container .title:before{
+    content: '';
+    position: absolute;
+    height: 0.1rem;
+    width: 30%;
+    margin: auto;
+    bottom: -3rem;
+    background-color: #ed145b;
+    left: 0;
+    right: 0;
+}
+
+#Mache .container p{
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 0 auto 5rem;
+    color: #e0e0e0;
+    width: 80%;
+}
+#Mache .container .btn{
+    padding: 2rem 2.7rem;
+    font-family: Lato, sans-serif;
+    background: #ed145b;
+    border-radius: 4rem;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/*############# MACHE ############*/
+/*############# PLEASE ###########*/
+#Please{
+    width: 100%;
+    background: #f4f4f4;
+    padding: 10rem 0;
+}
+#Please .container {
+    width: 80%;
+    margin: auto;
+}
+#Please .col-6{
+    width: 50%;
+}
+#Please .col-6 + .col-6{
+    padding: 5rem 10rem 5rem 5rem;
+}
+#Please .container .row .please-item{
+    width: 100%;
+    height: 100%;
+}
+#Please .col-6 img{
+    height: 100%;
+    width: 120%;
+}
+#Please .container .row .col-6+.col-6 .please-item .title{
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 3.8rem;
+    color: #5a5a5a;
+    line-height: 5rem;
+    margin-bottom: 7.6rem;
+}
+#Please .container .row .col-6+.col-6 .please-item .title:before{
+    content: '';
+    position: absolute;
+    height: 0.2rem;
+    width: 30%;
+    left: 0;
+    bottom: -3rem;
+    background-color: #ed145b;
+}
+#Please .col-6 p{
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #808080;
+    margin-bottom: 5rem;
+    width: 80%;
+}
+#Please .col-6 .btn{
+    padding: 2rem 2.5rem;
+    font-family: Lato, sans-serif;
+    background: #ed145b;
+    border-radius: 4rem;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/*############# PLEASE ###########*/
+/*############# FOOTER ###########*/
+footer{
+    width: 100%;
+    background: #2b2b2b;
+    padding: 5rem 0;
+}
+footer .container{
+    width: 80%;
+    margin: auto;
+}
+footer .col-6 {
+    width: 50%;
+    text-align: center;
+    color: #bcbcbc;
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+}
+/*############# FOOTER ###########*/
+
+@media screen and (max-width: 991px) {
+    #Please {
+        width: 100%;
+    }
+    #Please .container .col-6{
+        width: 100%;
+    }
+    #Please .container .col-6{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #Mache .container {
+        width: 100%;
+    }
+    #Please .container .col-6{
+        width: 100%;
+    }
+    #Please .container .col-6{
+        width: 100%;
+    }
+    footer .col-6{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header .container nav .mobile-btn {
+        display: flex;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .menu {
+        display: none;
+    }
+    .show-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #222222;
+        z-index: 9;
+    }
+}
+.family-part {
+    padding: 8.5rem 0;
+    background-color: #ed145b;
+}
+.family-part .container .row .col-10 .family-item h3 {
+    color: #fff;
+    font-size: 3.8rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.family-part .container .row .col-10 .family-item h3 span {
+    font-weight: bold;
+}
+.family-part .container .row .col-2 .family-item .btn-join {
+    padding: 1.5rem 6rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #ed145b;
+    border-radius: 5rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.family-part .container .row .col-2 .family-item .btn-join:hover {
+    background-color: #ed145b;
+    color: #fff;
+    box-shadow: inset 0 0 0 0.2rem #fff;
+}
+#updates {
+    padding: 15rem 0 21rem;
+}
+#updates .container .title {
+    position: relative;
+    font-size: 3.8rem;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    color: #5a5a5a;
+}
+#updates .container .title:before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 0.2rem;
+    background-color: #ed145b;
+    bottom: -5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#updates .container .title-text {
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 8.5rem auto 10rem;
+    color: #5a5a5a;
+}
+#updates .container .row .col-2 {
+    padding: 1rem;
+    width: 33%;
+}
+#updates .container .row .col-2 .update-items {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#updates .container .row .col-2 .update-items img {
+    max-width: 100%;
+}
+#updates .container .row .col-2 .update-items .img-col-3 {
+    position: relative;
+    width: 100%;
+    min-height: 50%;
+    overflow: hidden;
+}
+#updates .container .row .col-2 .update-items .img-col-3 img:nth-child(1) {
+    height: 100%;
+    width: 100%;
+}
+#updates .container .row .col-2 .update-items .pink-line {
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+    transition: 0.3s;
+}
+#updates .container .row .col-2 .update-items .img-col-3 .hover-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99%;
+    width: 100%;
+    background-color:rgba(237,20,91,0.8);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.6s;
+}
+#updates .container .row .col-2 .update-items .img-col-3 .hover-search img {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+#updates .container .row .col-2:hover .update-items .img-col-3 .hover-search {
+    opacity: 1;
+}
+#updates .container .row .col-2:hover .update-items .img-col-3 .pink-line {
+    transform: rotate(45deg) scale(1.3);
+    bottom: 30%;
+    left: 78%;
+}
+#updates .container .row .col-2 .update-items .update-info {
+    background-color: #f4f4f4;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+#updates .container .row .col-2 .update-items .update-info h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #5a5a5a;
+}
+#updates .container .row .col-2 .update-items .update-info .text {
+    margin-top: 3rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #808080;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 9px;
+    }
+    .family-part .container .row .col-10 {
+        text-align: center;
+        width: 100%;
+    }
+    .family-part .container .row .col-2 {
+        padding-top: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .family-part .container .row .col-2 .family-item {
+        width: 50%;
+        margin: auto;
+    }
+    #updates .container .row .col-2 {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 796px) {
+    html {
+        font-size: 8px;
+    }
+    #updates .container .row .col-2 {
+        width: 100%;
+    }
+}
+
